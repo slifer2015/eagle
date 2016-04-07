@@ -30,7 +30,7 @@
 
                     <div class="session-tags">
                         <ul>
-                            @foreach($course->tags as $tag)
+                            @foreach($session->tags as $tag)
                                 <li><a href="#">{{$tag->name}}</a><i class="fa fa-tag"></i> </li>
                             @endforeach
                         </ul>
@@ -63,7 +63,7 @@
                     {{--<button class="btn btn-success btn-sm btn-block">ورود به دوره</button>--}}
                 </div>
                 <div class="panel-footer clearfix">
-                    <div class="pull-right date"><i class="glyphicon glyphicon-calendar"></i> {{ $course->day_shamsi_created_at }} </div>
+                    <div class="pull-right date"><i class="glyphicon glyphicon-calendar"></i> {{ $session->day_shamsi_created_at }} </div>
                     <div class="pull-left comments"> {{ $course->num_comment }} <i class="glyphicon glyphicon-comment"></i></div>
                     <div class="pull-left duration"> {{ $course->num_student }} <i class="glyphicon glyphicon-user"></i></div>
                 </div>

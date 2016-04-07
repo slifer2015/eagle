@@ -39,6 +39,7 @@ class SessionController extends Controller
             'description'=>'required',
             'active'=>'required|in:0,1',
             'level'=>'required|in:1,2,3',
+            'duration'=>'required',
             'tags.*'=>'min:2|max:30',
         ]);
         $input=$request->all();
@@ -62,7 +63,8 @@ class SessionController extends Controller
             'active'=>$input['active'],
             'file'=>$fileName,
             'level'=>$input['level'],
-            'capacity'=>$capacity
+            'capacity'=>$capacity,
+            'duration'=>$input['duration']
         ]);
         $this->session_id=$session->id;
 

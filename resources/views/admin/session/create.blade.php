@@ -28,6 +28,10 @@
                                 {!! Form::select('level', [1=>'مقدماتی', 2=>'متوسط',3=>'پیشرفته'], 2, ['class'=>'form-control select-status']) !!}
                             </div>
                             <div class="form-group">
+                                <label for="duration">مدت فیلم</label>
+                                {!! Form::text('duration',null,['class'=>'form-control','id'=>'duration']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label>توضیحات</label>
                                 {!! Form::textarea('description', null, ['class'=>'form-control', 'rows'=>'10']) !!}
                             </div>
