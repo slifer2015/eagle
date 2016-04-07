@@ -1,0 +1,1038 @@
+/*
+
+----------------------------- Table Of Contents-------------------------------
+    1 - General styles
+    2 - Header
+    3 - Main Header (Tinker Description)
+    4 - Main Header (Text Animation Box)
+    5 - Right Main Menu Content (panel+media+...)
+    6 - Left Main Menu Content (panel+media+...)
+    7 - General Buttons
+    8 - Register && Login Page
+    9 - Comments
+    10 - Articles
+    11 - profile
+    8 - Media Queries
+
+*/
+
+/*----------------------------- 1 - General styles -------------------------------*/
+
+* {
+    font-family: "Yekan", Consolas, Monaco, "Andale Mono", monospace;
+}
+
+body {
+    background: #F0F0F0;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border-color: #DDDDDD;
+}
+
+.form-control {
+    border-radius: 2px;
+}
+i.fa{
+    margin-left: 5px;
+}
+
+/*videojs*/
+.video-js {
+    width: 100%;
+    height: 100%;
+    /*padding-top: 56.25%;*/
+}
+
+.vjs-fullscreen {
+    padding-top: 0px
+}
+
+.vjs-big-play-button {
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -.75em;
+    margin-left: -1.5em;
+    background-color: #ff685d !important;
+    opacity: .9 !important;
+    border-radius: 10px !important;
+    height: 1.5em !important;
+
+}
+.main .general-content{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+}
+label.control-label{
+    text-align: right !important;
+}
+
+/*----------------------------- 2 - Header -------------------------------*/
+header {
+    background: 0 0;
+    background: url("../images/desk-macbook-notebook-camera-canon-photo-hd-wallpaper.jpg");
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    /*padding-bottom: 100px;*/
+}
+
+header .navbar {
+    background: 0 0;
+}
+
+.main-nav {
+    border: none;
+}
+
+.nav-container {
+    border-bottom: 2px solid #999;
+}
+
+.nav.navbar-nav {
+    padding-top: 5px;
+}
+
+.nav.navbar-nav.left-menu {
+    margin-left: -45px;
+}
+
+.nav.navbar-nav.left-menu li.register {
+    margin-left: -20px;
+}
+
+.nav.navbar-nav.right-menu {
+    margin-right: 40px
+}
+
+.nav.navbar-nav.right-menu a {
+    font-size: 17px;
+}
+
+.nav.navbar-nav.right-menu li.active a {
+    background: 0 0;
+}
+
+.nav.navbar-nav .btn.register {
+    padding: 3px 12px;
+}
+
+.nav.navbar-nav .btn.login {
+    padding: 3px 12px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+.nav.navbar-nav .btn.login:hover {
+    background: #ddd;
+}
+
+/*----------------------------- 3 - Main Header Tinker Description ----------------*/
+.main-header {
+
+}
+
+.tinker-row {
+    margin-top: 25px;
+}
+
+.tinker-row .tinker-box {
+    margin-top: -20px;
+}
+
+.main-header .tinker-box {
+
+}
+
+.main-header .tinker-box .tinker-title {
+    color: #666666;
+
+}
+
+.main-header .tinker-box .tinker-description {
+    color: #777777;
+    line-height: 1.9;
+}
+
+/*----------------------------- 4 - Main Header Text Animation Box ----------------*/
+.text-styler {
+    /*margin-top: 20px;*/
+}
+
+.text-styler .top-bar {
+    background-color: #ebebeb;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: thin solid #dfdfde;
+}
+
+.text-styler .top-bar .circles {
+    margin: 10px 10px;
+    float: left;
+}
+
+.text-styler .top-bar .circles .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+}
+
+.circle-red {
+    background-color: #ff685d;
+}
+
+.circle-yellow {
+    background-color: yellow;
+}
+
+.circle-green {
+    background-color: greenyellow;
+}
+
+.text-styler .window-content {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+}
+
+.text-styler .window-content .numbers-row {
+    position: absolute;
+    background-color: #ebebeb;
+    min-height: 200px;
+    width: 35px;
+    left: 0;
+}
+
+.numbers-row > span {
+    display: block;
+    counter-increment: linenumber;
+
+}
+
+.numbers-row > span:before {
+    content: counter(linenumber);
+    padding-right: 0.8em;
+    text-align: right;
+    color: #999999;
+    font-size: 11px;
+}
+
+.typer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px 0 0 60px;
+    direction: ltr;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
+}
+
+.typer .element {
+    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*----------------------------- 5 Right Main Menu Content (panel+media+...) ------------------*/
+main {
+    margin-top: 30px;
+}
+
+.aside {
+
+}
+
+.panel.panel-aside {
+
+}
+
+.panel .panel-heading {
+    border-bottom: none;
+    background: 0 0;
+}
+
+.panel .panel-heading .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    border-bottom: 2px solid #dddddd;
+    padding: 0 0 15px 0;
+}
+
+.list-menu {
+
+}
+
+.list-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-menu li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.list-menu li:first-child {
+    padding-top: 0;
+}
+
+.list-menu li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.list-menu li a.see_more {
+    font-size: 13px;
+    color: #999;
+}
+
+.list-menu li a.see_more i {
+    margin-left: 3px;
+}
+
+.list-menu .menu-object {
+    width: 110px;
+}
+
+.list-menu .menu-object img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.list-menu li .media-heading {
+    font-size: 14px;
+}
+
+.list-menu li .session-num {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.list-menu li .session-name {
+    font-size: 12px;
+}
+
+.panel .description {
+    line-height: 1.9;
+}
+
+/*----------------------------- 6 Left Main Menu Content (panel+media+...) ------------------*/
+.main {
+
+}
+
+.main .panel.panel-course {
+
+}
+
+.main .panel.panel-course .image img {
+    max-width: 100%;
+    display: block;
+}
+
+.main .panel.panel-course .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.main .panel.panel-course .description {
+    color: #666666;
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.main .panel.panel-course .btn.start {
+    padding-top: 3px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.panel.panel-course .duration span {
+    margin-right: 3px;
+}
+
+main .panel.main-course .panel-heading.course-heading {
+
+}
+
+main .panel.main-course .panel-heading.course-heading i {
+    color: #666666;
+}
+
+main .panel.main-course .panel-heading .course-buy-num {
+    margin-top: -45px;
+}
+
+main .panel.main-course .panel-body .image {
+    margin: 30px auto;
+}
+
+main .panel.main-course .panel-body .course-sessions {
+    margin: 20px auto;
+}
+
+main .panel.main-course .panel-body .course-sessions table tr {
+    background-color: #eeeeee;
+}
+
+main .panel.main-course .panel-body .course-sessions table tr:hover {
+    background-color: #ccc;
+}
+
+main .panel.main-course .panel-body .course-sessions table tr a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333;
+}
+
+.course-sessions table tr a .free-session {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-top: -4px;
+    background-color: #ff685d;
+    color: #ffffff;
+}
+
+.course-sessions table tr a .free-session:hover {
+    background-color: #F75A4F;
+}
+
+main .panel.main-course .panel-body .course-sessions table i {
+    color: #666666;
+    margin-left: 5px;
+}
+
+main .panel.main-course .panel-body .course-sessions table td {
+    padding: 15px;
+}
+
+main .panel.main-course .panel-body .course-sessions table td:first-child {
+    width: 6%;
+}
+
+main .panel.main-course .panel-body .course-sessions table td:last-child {
+    width: 10%;
+}
+
+main .panel .panel-body.panel-list {
+    padding-top: 0;
+}
+
+main .panel .list-group {
+    margin-bottom: 0;
+
+}
+
+main .panel .list-group li {
+    padding: 10px 0;
+}
+
+main .panel.skill-panel .panel-body ul.list-group li {
+    border: none;
+}
+
+main .panel.skill-panel .panel-body ul.list-group li i {
+    margin-left: 5px;
+    color: #666666;
+}
+
+main .course-price-box {
+    border: 1px solid #cccccc;
+    background-color: #ff685d;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+main .course-price-box:hover {
+    background-color: #F75A4F;
+}
+
+main .course-price-box a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main .session-tags {
+    width: 100%;
+    padding: 4px 10px;
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding-top: 10px;
+}
+
+main .session-tags .tags-container {
+    /*padding-right: 0;*/
+}
+
+main .session-tags ul {
+    float: right;
+    padding-right: 0px;
+}
+
+main .session-tags ul li {
+    float: right;
+    list-style: none;
+}
+
+main .session-tags ul li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+}
+
+main .session-tags ul li a:hover {
+    color: #666666;
+}
+
+main .session-tags ul li a::after {
+    content: " ، ";
+}
+
+main .session-tags ul li:last-child a::after {
+    content: "";
+}
+
+main .session-tags i.fa {
+    margin-left: 5px;
+}
+
+/*----------------------------- 7 - General Buttons -------------------------------*/
+.btn i {
+    margin-left: 3px;
+    top: 5px;
+}
+
+.btn.btn-learn {
+    background: #ff685d;
+    color: #ffffff;
+}
+
+.btn.btn-learn:hover {
+    background: #F75A4F;
+    color: #ffffff;
+}
+
+input:focus {
+    border-color: #ccc !important;
+}
+
+/*----------------------------- 8 - Register && Login Page -------------------------------*/
+.register-container {
+    float: none;
+    display: block;
+    margin-top: 70px;
+}
+
+.register-container .register-panel {
+
+}
+
+.register-container .register-panel .panel-heading {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.register-container .register-panel .register-title {
+    display: inline-block;
+}
+
+.register-container .register-panel .register-image {
+    margin-top: -4px;
+}
+
+.register-container .register-panel label.control-label {
+    text-align: right;
+    padding-top: 5px;
+}
+
+.panel-heading .glyphicon {
+    margin-left: 5px;
+}
+
+.register-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-link {
+    color: #ff685d;
+}
+
+button.register-btn {
+
+}
+
+.checkbox label {
+    margin-right: 15px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.checkbox.checkbox-success input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+}
+
+.checkbox.checkbox-success input[type=checkbox]:checked::before {
+    content: "\2714";
+    background-color: #5cb85c;
+    font-size: 10px;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    top: 0;
+    bottom: 10px;
+    right: 0px;
+    position: absolute;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+.panel-body ul li{
+    list-style: none;
+}
+.password-reset-form{
+    padding: 15px;
+    padding-top: 0;
+}
+.password-reset-form .control-label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.password-reset-form .form-group.last{
+    margin-bottom: 0;
+}
+.alerts-box .tinker-alert{
+    padding-left: 10px;
+}
+.alerts-box .tinker-alert .tinker-close{
+    top: 1px;
+}
+.alerts-box ul li{
+    list-style: none;
+}
+
+li.login i.fa-power-off{
+    color: #ff685d;
+}
+
+/*----------------------------- 9 - Comments -------------------------------*/
+.comment-container {
+
+}
+
+.comment-container .comment-panel {
+    background-color: #DDDDDD;
+}
+
+.comment-container .comment-panel .panel-heading .title {
+    border-bottom-color: #eeeeee;
+}
+
+.comment-container .comment-list li.media {
+    margin-bottom: 20px;
+}
+
+.comment-container .comment-list li.media.comment-form {
+    padding: 0;
+
+}
+
+.comment-container .comment-list li.media.comment-form button[type=submit] {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.comment-container .comment-list li.media.comment-form textarea {
+    border: none;
+    width: 100%;
+}
+
+.comment-container .comment-list li.media .media-right a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.comment-container .comment-list li.media.reply {
+    margin-right: 60px;
+}
+
+.comment-container .comment-list li.media .media-right a img {
+    border-radius: 70px;
+}
+
+.comment-list .media-list .media-body.comment-media {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comment-list .media-list .media-body.comment-media .date-container {
+    margin-bottom: 10px;
+}
+
+.comment-list .media-list .media-body.comment-media .date-container a {
+    text-decoration: none;
+}
+
+.comment-list .media-list .media-body.comment-media .comment-date {
+    margin-left: 5px;
+    color: #666666;
+}
+
+.comment-list .media-list .media-body.comment-media p {
+    margin-top: 10px;
+}
+
+
+/*----------------------------- 10 - Articles -------------------------------*/
+article.post .media {
+
+}
+
+article.post .article-details {
+    float: left;
+    font-size: 13px;
+    /*margin-bottom: 10px;*/
+}
+
+article.post ul.details {
+    float: left;
+}
+article.post ul.details li{
+    color: #666666;
+}
+
+article.post .media .media-right .menu-object {
+    width: 200px;
+}
+
+article.post .media .media-right .menu-object img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+article.post .media .article-mini-content p {
+    margin-bottom: 20px;
+}
+
+article.post .media .article-mini-content button {
+
+}
+article.post .article-full-details{
+    float: right;
+    margin-top: 20px;
+}
+article.post .media .media-right.media-full-image{
+    display: block;
+    margin-bottom: 20px;
+}
+article.post .media .media-right.media-full-image .menu-object {
+    width: 100%;
+}
+
+/*----------------------------- 8 - Media Queries -------------------------------*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .text-styler {
+        margin-top: 20px;
+    }
+
+    .list-menu li .media-right {
+        display: block;
+        padding-left: 0;
+    }
+
+    .list-menu li .media-right .menu-object {
+        width: auto;
+    }
+
+    .media-heading, .session-name, .session-num {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .duration {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+
+    article.post .media-right {
+        display: block;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    article.post .media .media-right .menu-object {
+        width: 100%;
+    }
+    article.post .article-details {
+        float: right;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .nav.navbar-nav.left-menu {
+        margin-left: -15px;
+    }
+
+    .nav.navbar-nav.right-menu {
+        margin-right: -15px
+    }
+
+    .nav.navbar-nav.left-menu li.register {
+        margin-left: 0px;
+    }
+
+    .nav.navbar-nav a {
+        text-align: center;
+    }
+
+    .navbar-brand.logo {
+        margin-top: -5px;
+    }
+
+    .nav.navbar-nav.left-menu button {
+        background: 0 0;
+        color: #777777;
+        font-size: 17px;
+    }
+
+    .nav.navbar-nav.left-menu button.login {
+        border: none;
+    }
+
+    .nav.navbar-nav.left-menu button:hover {
+        color: #333333;
+    }
+
+    .nav.navbar-nav .btn.login {
+        background: 0 0;
+    }
+
+    .text-styler {
+        display: none;
+    }
+
+    .tinker-row .tinker-box {
+        padding-bottom: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .main .panel.panel-course .image img {
+        width: 100%;
+    }
+
+    .list-menu li .media-right {
+        display: block;
+        padding-left: 0;
+    }
+
+    .list-menu li .media-right .menu-object {
+        width: auto;
+    }
+
+    .media-heading, .session-name, .session-num {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .duration {
+        text-align: center;
+    }
+
+    main .panel.main-course .panel-heading .course-buy-num {
+        display: none;
+    }
+
+    main .panel.skill-panel .panel-body ul.list-group li {
+        text-align: center;
+    }
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+
+/*----------------------------- 11 - Profile -------------------------------*/
+
+
+/*--------------------------Added By Emad-----------------------*/
+.direct-login {
+    padding: 20px 15px 20px 40px;
+    border-left: 1px solid #dddddd;
+}
+
+.direct-login .control-label {
+    font-weight: normal;
+}
+
+.forget-password {
+    font-size: 12px;
+    color: #666666;
+}
+
+.social-login {
+
+}
+
+.social-login .login-with {
+    display: block;
+    width: 105px;
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #fff;
+    text-indent: -9999px;
+    background-image: url("../images/login-with-logos.png");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    /*border-radius: 50px;*/
+    -webkit-transition: 1s;
+    transition: 1.2s;
+}
+
+.login-with:hover, .login-with:focus {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.login-with:first-child {
+    margin-top: 25px;
+}
+
+.social-login .login-with.google {
+    background-position: -183px center;
+}
+
+.login-with.google:hover, .login-with.google:focus {
+    background-color: #f34336;
+}
+
+.login-with.yahoo:hover, .login-with.yahoo:focus {
+    background-color: #3e018d;
+}
+
+.login-with.yahoo {
+    background-position: -76px center;
+}
+
+.login-with.linkedin:hover, .login-with.linkedin:focus {
+    background-color: #069;
+}
+
+.register-container .btn-learn {
+    border-bottom: 5px solid #e95549;
+}
+
+.register-form {
+    padding: 30px;
+}
+
+.register-form .control-label {
+    font-size: 14px;
+    font-weight: normal;
+}

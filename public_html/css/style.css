@@ -1,0 +1,742 @@
+body{
+    font-family: Iran Sans Web, tahoma;
+    font-weight: 300;
+    font-size: 12px;
+    color: #555;
+    direction: rtl;
+    background-color: #dddddd;
+    /*min-height: 2000px;*/
+    padding-top: 70px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.test{
+    border-radius: 5px;
+    background: darkviolet;
+    height: 300px;
+}
+.ltr{
+    direction: ltr;
+}
+h4 a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.panel.panel-custom{
+    border: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.panel.panel-custom .panel-heading{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    /*text-shadow: 0 2px 0px #999;*/
+    color: #fff;
+}
+.panel.panel-custom.panel-gray .panel-heading{
+    background-color: #909090;
+}
+.panel.panel-custom.panel-blue .panel-heading{
+    background-color: #16c1ec;
+}
+
+.articles-list .media-right img{
+    height: 64px;
+    width: 64px;
+    border-radius: 4px;
+}
+.articles-list .media-body{
+    font-size: 11px;
+    line-height: 15px;
+}
+.articles-list li{
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+}
+.articles-list li:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.articles-list .media-heading.article-title{
+    line-height: 20px;
+}
+.articles-list .media-heading.article-title a{
+    text-decoration: none;
+    color: #666666;
+}
+.panel.panel-image {
+    border: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+.panel.panel-image .image{
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.panel.panel-image .image .price{
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    padding: 3px 10px;
+    background-color: #008fe8;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 11px;
+}
+.panel.panel-image .image .type{
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    padding: 5px 12px;
+    background-color: #008fe8;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 11px;
+}
+.panel.panel-image .image img{
+    width: 100%;
+}
+.panel.panel-image .panel-heading .title{
+    font-weight: 500;
+    font-size: 14px;
+}
+.panel.panel-image .panel-heading .course-title{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.panel.panel-image .panel-heading .subtitle{
+    padding: 7px 0 0 0;
+}
+
+.panel.panel-image .panel-heading.article-title{
+    padding: 15px 15px 10px 15px;
+}
+.panel.panel-image .panel-heading.article-title a.title{
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    color: #555;
+}
+.panel.panel-image .panel-body{
+    padding-top: 0;
+}
+.panel.panel-image .panel-body hr{
+    margin-top: 10px;
+}
+.panel.panel-image .panel-body .description{
+    padding-bottom: 15px;
+    line-height: 20px;
+}
+.panel.panel-image .panel-body .article-content{
+    text-align: justify;
+    line-height: 21px;
+}
+.panel.panel-image .panel-footer .duration{
+    margin-left: 12px;
+}
+.panel.panel-image .panel-footer .duration i{
+    color: #ffc213;
+}
+.panel.panel-image .panel-footer .date i{
+    color: #019a01;
+}
+.panel.panel-image .panel-footer .article-date i{
+    color: #019a01;
+}
+.panel.panel-image .panel-footer .comments i{
+    color: #008fe8;
+}
+.panel.panel-image .panel-footer .writer i{
+    color: #888;
+    margin-left: 3px;
+}
+.panel.panel-image .panel-footer .writer{
+    margin-left: 12px;
+}
+.panel.panel-image .panel-footer .article-date{
+    margin-left: 30px;
+}
+
+.site-navbar .container{
+    padding: 0 30px;
+}
+.nav.navbar-nav.navbar-right li{
+    float: right;
+}
+.nav.navbar-nav.navbar-right li a{
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav.navbar-nav li .btn-group{
+    padding: 10px 20px;
+    font-size: 11px;
+}
+.navbar-brand{
+    background: url(../img/logo/namamooz.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 167px;
+    text-indent: -99999px;
+}
+
+
+.nav.navbar-nav li .btn-group .btn-gray{
+    background-color: #444;
+    padding: 4px 15px;
+    font-size: 12px;
+    color: #DDD;
+    margin-left: 1px;
+}
+.nav.navbar-nav li .btn-group .btn-gray:hover{
+    background-color: #555;
+}
+
+.nav.navbar-nav li .btn-group .btn-dark-blue{
+    background-color: #337AB7;
+    padding: 4px 15px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 1px;
+}
+.nav.navbar-nav li .btn-group .btn-dark-blue:hover{
+    background-color: #3368a5;
+}
+.nav.navbar-nav li .btn-group .btn-dark-blue i{
+    vertical-align: middle;
+}
+.nav.navbar-nav li .dropdown-menu{
+    margin: 0;
+    text-align: right;
+    border-radius: 1px;
+}
+.nav.navbar-nav li .dropdown-menu a{
+    font-size: 0.8em;
+    padding: 8px 10px;
+    border-bottom: 1px solid #EEE;
+}
+.nav.navbar-nav li .dropdown-menu li:last-of-type a{
+    border-color: transparent;
+}
+
+/*----------------------------- 7 - General Buttons -------------------------------*/
+.btn i {
+    margin-left: 3px;
+    top: 5px;
+}
+
+.btn{
+    border-bottom: 3px solid transparent;
+}
+
+.btn.btn-learn {
+    background: #ff685d;
+    color: #ffffff;
+    border-bottom-color: #e05348;
+}
+
+.btn.btn-learn:hover {
+    background: #F75A4F;
+    color: #ffffff;
+}
+
+input:focus {
+    border-color: #ccc !important;
+}
+
+.btn.btn-success {
+    border-bottom-color: #499b49;
+}
+.btn.btn-info {
+    border-bottom-color: #449bc3;
+}
+
+/*----------------------------- 8 - Register && Login Page -------------------------------*/
+.register-container {
+    float: none;
+    display: block;
+    margin-top: 0;
+}
+
+.register-container .register-panel {
+
+}
+
+.register-container .register-panel .panel-heading {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 13px 15px;
+}
+
+.register-container .register-panel .panel-heading .register-image img{
+    height: 25px;
+}
+
+.register-container .register-panel .register-title {
+    display: inline-block;
+}
+.register-container .register-panel .register-title b{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.register-container .register-panel .register-image {
+    margin-top: -4px;
+}
+
+.register-container .register-panel label.control-label {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.panel-heading .glyphicon {
+    margin-left: 5px;
+}
+
+.register-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-link {
+    color: #ff685d;
+}
+
+button.register-btn {
+
+}
+
+.checkbox label {
+    margin-right: 25px;
+    padding-top: 3px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.checkbox.checkbox-success input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+}
+
+.checkbox.checkbox-success input[type=checkbox]:checked::before {
+    content: "\2714";
+    background-color: #5cb85c;
+    font-size: 10px;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    top: 0;
+    bottom: 10px;
+    right: 0;
+    position: absolute;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+.panel-body ul li{
+    list-style: none;
+}
+.password-reset-form{
+    padding: 15px;
+    padding-top: 0;
+}
+.password-reset-form .control-label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.password-reset-form .form-group.last{
+    margin-bottom: 0;
+}
+.alerts-box .tinker-alert{
+    padding-left: 10px;
+}
+.alerts-box .tinker-alert .tinker-close{
+    top: 1px;
+}
+.alerts-box ul li{
+    list-style: none;
+}
+
+li.login i.fa-power-off{
+    color: #ff685d;
+}
+
+
+
+/*----------------------------- 9 - I dont know the Category?! -------------------------------*/
+.session-tags {
+    padding: 0;
+}
+
+
+.session-tags ul {
+    padding: 0;
+    margin: 0;
+}
+
+.session-tags ul li {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    display: inline-block;
+    padding: 2px 25px 2px 8px;
+    background: #BBB;
+    border-radius: 3px;
+
+}
+
+.session-tags ul li i{
+    background: #999;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px ;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.session-tags ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    /*text-shadow: -1px 1px 1px #999;*/
+}
+
+.session-tags ul li a:hover {
+    color: #666666;
+}
+
+/*.session-tags ul li a::after {*/
+    /*content: " ، ";*/
+/*}*/
+
+/*.session-tags ul li:last-child a::after {*/
+    /*content: "";*/
+/*}*/
+
+.session-tags i.fa {
+    margin-left: 5px;
+}
+
+
+.course-sessions {
+
+}
+
+.course-sessions table tr {
+    background-color: #f5f5f5;
+}
+
+.course-sessions table tr:hover {
+    background-color: #eee;
+}
+
+.course-sessions table tr a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333;
+}
+
+.course-sessions table tr a .free-session {
+    /*border: 1px solid #cccccc;*/
+    /*border-radius: 3px;*/
+    /*padding: 5px 15px;*/
+    /*margin-top: -4px;*/
+    /*background-color: #ff685d;*/
+    /*color: #ffffff;*/
+    padding: 4px 12px;
+}
+
+.course-sessions table tr a .free-session:hover {
+    background-color: #F75A4F;
+}
+
+.course-sessions table i {
+    color: #666666;
+    margin-left: 5px;
+}
+
+.course-sessions .table tr td {
+    padding: 15px;
+}
+
+.course-sessions table td:first-child {
+    width: 6%;
+}
+
+.course-sessions table td:last-child {
+    width: 10%;
+}
+
+.session-title{
+    white-space: normal;
+}
+
+
+/*videojs*/
+.video-js {
+    width: 100%;
+    height: 100%;
+    /*padding-top: 56.25%;*/
+}
+
+.vjs-fullscreen {
+    padding-top: 0px
+}
+
+.vjs-big-play-button {
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -.75em;
+    margin-left: -1.5em;
+    background-color: #ff685d !important;
+    opacity: .9 !important;
+    border-radius: 10px !important;
+    height: 1.5em !important;
+
+}
+
+
+
+
+
+
+.panel.user-info .avatar img{
+    height: 90px;
+    width: 90px;
+}
+.panel.user-info h4 a{
+    color: #333333;
+    text-decoration: none;
+}
+.panel.course-info .image img{
+    width: 100%;
+}
+.panel.course-info .panel-body h5{
+    margin-top: 0;
+}
+.panel.course-info .panel-body .attributes ul{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.panel.course-info .panel-body .attributes li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+
+
+
+.direct-login {
+    padding: 20px 15px 20px 40px;
+    border-left: 1px solid #dddddd;
+}
+
+.direct-login .control-label {
+    font-weight: 500;
+    padding-left: 0;
+}
+
+.forget-password {
+    font-size: 12px;
+    color: #666666;
+}
+
+.social-login {
+
+}
+
+.social-login .login-with {
+    display: block;
+    width: 105px;
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #fff;
+    text-indent: -9999px;
+    background-image: url("../img/login-with-logos.png");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    /*border-radius: 50px;*/
+    -webkit-transition: 1s;
+    transition: 1.2s;
+}
+
+.login-with:hover, .login-with:focus {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.login-with:first-child {
+    margin-top: 25px;
+}
+
+.social-login .login-with.google {
+    background-position: -183px center;
+}
+
+.login-with.google:hover, .login-with.google:focus {
+    background-color: #f34336;
+}
+
+.login-with.yahoo:hover, .login-with.yahoo:focus {
+    background-color: #3e018d;
+}
+
+.login-with.yahoo {
+    background-position: -76px center;
+}
+
+.login-with.linkedin:hover, .login-with.linkedin:focus {
+    background-color: #069;
+}
+
+.register-container .btn-learn {
+    border-bottom: 5px solid #e95549;
+}
+
+.register-form {
+    padding: 30px;
+}
+
+.register-form .control-label {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+
+.categories-list a{
+    color: #666;
+    text-decoration: none;
+}
+
+
+footer.footer{
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+
+footer.footer .socials{
+    margin-bottom: 10px;
+}
+footer.footer .socials li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+footer.footer .socials li i{
+    color: #999;
+    font-size: 2.2em;
+}
+footer.footer .with-love{
+    padding: 10px;
+    background: #CCC;
+    border-top: 1px solid #BBB;
+}
+footer.footer .with-love span{
+    margin-right: 10px;
+}
+
+.panel .email-confirmation{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.panel .email-confirmation i.fa-at{
+    color: #dddddd;
+    font-size: 7em;
+}
+
+
+
+
+input[type=email], input[type=password], input[type=search], input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    resize: vertical;
+    background-color: #fff;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+button, input, keygen, select{
+    font-family: Iran Sans Web;
+    font-size: 13px;
+    outline: none;
+}
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
+    box-shadow: none;
+    border-color: #d0d0d0;
+    border-width: 1px 1px 2px;
+    margin-bottom: 0;
+}
+
+.panel.panel-custom .imagic-title h4 img{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+.panel.panel-custom .imagic-title h4{
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*----------------------------- 9 - Collapse navbar for sm -------------------------------*/
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
